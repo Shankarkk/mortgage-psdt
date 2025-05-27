@@ -1,7 +1,7 @@
 version: 2
 sources:
-  - name: datafeed_shared_schema
-    database: "{{('raw')}}"
+  - name: mortgage_tracker
+    database: "{{('shankar_dev')}}"
     schema: staging_layer
 
 
