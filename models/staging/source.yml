@@ -1,0 +1,12 @@
+version: 2
+sources:
+    - name: mortgage_tracker
+      database: "{{('shankar_dev')}}"
+      schema: raw
+      tables:
+
+        - name: RAW_CUSTOMER
+        - name: RAW_LOAN
+        - name: RAW_BRANCHES
+        - name: RAW_DOCUMENTS
+
