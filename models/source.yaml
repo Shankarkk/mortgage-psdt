@@ -1,0 +1,14 @@
+version: 2
+sources:
+  - name: datafeed_shared_schema
+    database: "{{('raw')}}"
+    schema: staging_layer
+
+
+    tables:
+      - name: RAW_CUSTOMERS
+      - name: RAW_LOAN
+      - name: RAW_DOCUMENTS
+      - name: RAW_BRANCHES
+    
+     
