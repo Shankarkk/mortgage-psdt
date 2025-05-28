@@ -20,3 +20,5 @@ models:
   mortgage_tracker:
     staging:
       +materialized: table
+    intermediate:
+      +materialized: view    
