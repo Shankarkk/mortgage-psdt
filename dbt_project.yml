@@ -22,3 +22,5 @@ models:
       +materialized: table
     intermediate:
       +materialized: view    
+    final:
+      +materialized: table
