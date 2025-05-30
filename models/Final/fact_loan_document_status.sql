@@ -1,3 +1,4 @@
+{{ config(materialized='table') }}
 with base as (
     select
         loan_id,
