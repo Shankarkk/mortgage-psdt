@@ -5,7 +5,7 @@ with documents as (
         trim(loan_id) as loan_id,
         count(loan_id) as total_documents,
         count_if(lower(trim(is_verified)) = 'yes') as verified_documents
-    from shankar_dev.my_own_dev.stg_documents
+    from {{ ref('stg_documents') }}
     group by trim(loan_id)
 ),
 
