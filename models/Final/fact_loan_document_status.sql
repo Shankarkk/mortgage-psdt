@@ -10,8 +10,9 @@ with base as (
         verified_documents,
         document_status,
         case
-            when total_documents>0
-            then round((verified_documents*100.00)/NULLIF(total_documents,0),2))
+            when total_documents > 0
+            then round((verified_documents * 100.00) /
+        nullif(total_documents, 0), 2)
             else 0
         end as verification_percentage
     from {{ ref('int_loan_document_status') }} 
