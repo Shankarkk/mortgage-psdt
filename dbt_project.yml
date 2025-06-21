@@ -17,10 +17,14 @@ clean-targets:
   - "dbt_packages"
 
 models:
+  models:
   mortgage_tracker:
     staging:
       +materialized: table
+      +schema: stg
     intermediate:
-      +materialized: view    
+      +materialized: view
+      +schema: int
     final:
       +materialized: table
+      +schema: mart

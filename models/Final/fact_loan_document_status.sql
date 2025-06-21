@@ -1,3 +1,4 @@
+{{ config(materialized='table') }}
 with base as (
     select
         loan_id,
@@ -17,6 +18,6 @@ with base as (
         end as verification_percentage
     from {{ ref('int_loan_document_status') }} 
 )       
-select * from base       
+select * from base 
 
 
