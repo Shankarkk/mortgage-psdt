@@ -16,17 +16,17 @@ An end-to-end data engineering project built to track and monitor post-sanction 
 - Final report layer feeds into downstream dashboards
 - UAT-ready with clean lineage & documentation
   
-📦 mortgage-psdt/  
+📦 mortgage_psdt/  
 ├── models/  
-│   ├── staging/  
-│   ├── intermediate/  
-│   ├── marts/  
-├── snapshots/  
-├── tests/  
-├── macros/  
-├── dbt_project.yml  
-├── packages.yml  
-└── README.md
+│   ├── staging/            # Raw staging models (customer_docs, loan_accounts)  
+│   ├── intermediate/       # Business rule logic models  
+│   ├── marts/              # Final reporting models (ready for dashboards)  
+├── snapshots/              # Change tracking for key tables  
+├── tests/                  # dbt tests (unique, not_null, relationships)  
+├── macros/                 # Custom Jinja macros (if used)  
+├── dbt_project.yml         # dbt project config  
+├── packages.yml            # dbt packages  
+└── README.md               # Project documentation
 
  📊 Impact
 - Reduced manual tracking for document collection teams
