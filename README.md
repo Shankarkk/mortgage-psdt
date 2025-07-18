@@ -1,4 +1,4 @@
-# 🏦 Mortgage Post-Sanction Documentation Tracker
+# Mortgage Post-Sanction Documentation Tracker (mortgage-psdt)
 
 An end-to-end data engineering project built to track and monitor post-sanction mortgage documentation, leveraging Snowflake, dbt Cloud, and CI/CD automation.
 
