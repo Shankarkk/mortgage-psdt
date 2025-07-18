@@ -1,6 +1,3 @@
-
----
-
 🏦 Mortgage Post-Sanction Documentation Tracker (mortgage-psdt)
 
 A production-grade data engineering project designed to track, validate, and monitor post-sanction documentation in the mortgage loan lifecycle, leveraging Snowflake, dbt Cloud, and CI/CD automation.
@@ -32,7 +29,7 @@ SQL, Jinja, dbt tests, Source freshness
 
 ✅ dbt tests ensure data quality (not_null, unique, relationships)
 
-🧪 Final mart models are UAT-ready, with clean lineage and docs
+🧪 Final mart models are UAT-ready, with clean lineage and documentation
 
 📊 Feeds into dashboards and reporting layers for stakeholder visibility
 
@@ -40,9 +37,9 @@ SQL, Jinja, dbt tests, Source freshness
 
 ---
 
-📁 Project Structure (mortgage_psdt/)
+📁 Project Structure (mortgage-psdt/)
 
-mortgage_psdt/
+mortgage-psdt/
 
 models/
 
@@ -78,8 +75,4 @@ README.md – Project documentation
 
 ✅ Ensured trust in data quality before reporting handoff
 
-📈 Enabled smooth dashboard integration for executive insights
-
-
-
----
+📈 Enabled seamless dashboard integration for executive insights
