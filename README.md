@@ -1,35 +1,22 @@
-# Mortgage Post-Sanction Documentation Tracker
+# 🏦 Mortgage Post-Sanction Documentation Tracker
 
-This is a real-world data engineering project built using **Snowflake**, **dbt**, **Azure Data Factory**, and **SQL** to track the end-to-end lifecycle of mortgage documentation post-loan sanction.
+An end-to-end data engineering project built to track and monitor post-sanction mortgage documentation, leveraging Snowflake, dbt Cloud, and CI/CD automation.
 
-## 🔧 Tech Stack:
-- **Snowflake**: Cloud Data Warehouse
-- **dbt**: Data modeling, transformation, testing, CI/CD
-- **Azure Data Factory**: Ingestion and orchestration
-- **SQL**: Merge, window functions, incremental logic
+## 🔧 Tech Stack
+- **Snowflake** (Warehouse, Staging, Intermediate, Mart Layers)
+- **dbt Cloud** (Staging → Intermediate → Mart, Incremental models)
+- **Azure Data Factory** (EL pipelines)
+- **GitHub** (CI/CD versioning, readme)
+- **SQL**, **Jinja**, **dbt tests**, **Source freshness**
 
-## 🧱 Pipeline Overview:
-1. Ingest data from ADF (source: banking systems) into Snowflake raw layer
-2. Use **Streams + Tasks** for CDC + Automation
-3. Apply dbt models:
-   - `stg`: cleansing + standardizing
-   - `intermediate`: join customer, loan, document data
-   - `mart`: KPI-focused models
+## 🧩 Key Features
+- Tracks missing/unverified documents post mortgage loan sanction
+- Maintains document stage-wise flow
+- dbt tests validate the completeness and quality of documents
+- Final report layer feeds into downstream dashboards
+- UAT-ready with clean lineage & documentation
 
-## 📈 Business KPIs Tracked:
-- Count of missing documents (per branch / customer / stage)
-- SLA delay tracking (valid vs overdue)
-- Loan-wise documentation readiness
-
-## 🧪 Data Quality
-- dbt `schema.yml` includes:
-  - `not_null`, `unique`, `accepted_values`
-  - Custom test: `document_submitted_date <= today()`
-
-## 🔁 Orchestration:
-- Stream-based incremental models
-- Task DAG with retry + monitoring
-
----
-
-📌 *Demo available on request. This is a hands-on domain-specific data engineering project.*
+## 📊 Impact
+- Reduced manual tracking for document collection teams
+- Identified high-risk loan files with pending compliance
+- Enabled smooth handoff to reporting and dashboarding
