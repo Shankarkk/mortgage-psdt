@@ -78,14 +78,14 @@ A production-grade data engineering project designed to **track, validate, and m
 
 ---
 
-## 🤝 Contributions & Contact
-
-This project is built and maintained by:
+## 🤝 Author & Contact
 
 **Shankar Kamalakannan**  
-💼 [LinkedIn](#) | 💻 [GitHub](#) | 📧 [your.email@example.com]
+Freelance Snowflake | dbt | Cloud Data Engineer  
 
-Feel free to connect for collaboration, freelance, or project consulting.
+📱 Mobile: +91-95976 45086  
+📧 Email: shankar.freelance.dataengineer@gmail.com  
+🌐 GitHub: [https://github.com/shankarkk](https://github.com/shankarkk)
 
 ---
 
