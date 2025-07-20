@@ -56,6 +56,15 @@ mortgage-psdt/
 
 ---
 
+
+### 🔍 Interview Readiness Summary
+
+🟢 **Immediate Joiner** – Available for full-time or contract roles  
+📂 Built for mortgage document validation with dbt incremental models  
+⚙️ Used Snowflake Streams + Tasks for real-time tracking  
+✅ Applied dbt schema tests (`unique`, `not_null`) to ensure document-level integrity  
+🚀 Alerting via dbt Cloud + Slack/email for failure monitoring
+
 👤 Author
 
 Shankar Kamalakannan
