@@ -72,6 +72,6 @@ Freelance Snowflake + dbt Developer
 
 📱 Mobile: +91-95976 45086
 📧 Email: shankar.freelance.dataengineer@gmail.com
-🔗 GitHub: https://github.com/shankarkk
+🔗 GitHub:.(https://tinyurl.com/Shankar-Github-2025).
 
 ---
